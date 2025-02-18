@@ -3,7 +3,12 @@
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import { faMoon } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { PT_Serif } from "next/font/google";
+const ptSerif = PT_Serif({
+  weight: ["400", "700"],
+  subsets: ['latin'],
+  display: "swap"
+});
 import React, { useState } from "react";
 
 
@@ -32,15 +37,16 @@ const Main = () => {
         style={{
           borderColor: darkMode ? "#ffffff" : "#000000",
         }}
-         className='font-bold xl:text-[200px] sm:text-[50px] md:text-[80px] lg:text-[120px] text-center border-y-[2px] my-[20px] pt-serif'>THE BLOG</h1>
+         className={`font-bold xl:text-[200px] sm:text-[50px] md:text-[80px] lg:text-[120px] text-center border-y-[2px] my-[20px] ${ptSerif.className}`}>THE BLOG</h1>
 
          <h1 style={{
           borderColor: darkMode ? "#ffffff" : "#000000",
         }}
-         className='font-bold xl:text-[110px] sm:text-[25px] md:text-[50px] lg:text-[80px] text-center border-y-[2px] my-[20px] leading-[90%] py-[30px] pt-serif'>MUHAMMAD SHARIQ</h1>
+         className={`font-bold xl:text-[110px] sm:text-[25px] md:text-[50px] lg:text-[80px] text-center border-y-[2px] my-[20px] leading-[90%] py-[30px] ${ptSerif.className}`}>MUHAMMAD SHARIQ</h1>
         
     </div>
   )
 }
 
 export default Main
+

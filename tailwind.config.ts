@@ -13,6 +13,9 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+    fontFamily: {
+      ptSerif: ["var(--font-pt-serif)", "serif"],
+    },
     screens: {
       sm: "320px",
       sm2: '500px',

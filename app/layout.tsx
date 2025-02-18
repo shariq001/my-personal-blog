@@ -16,8 +16,9 @@ const geistMono = Geist_Mono({
 
 // ✅ Metadata is allowed in a server component
 export const metadata: Metadata = {
-  title: "Dynamic Blog",
-  description: "Created by Muhammad Shariq",
+  title: "Muhammad's Personal Blog",
+  description: "Explore Muhammad Shariq's personal blog, where he shares insights, experiences, and thoughts on tech, learning, and personal growth. Stay inspired and informed!",
+  icons: "/logo.jpg",
 };
 
 export default function RootLayout({

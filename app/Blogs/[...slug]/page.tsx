@@ -7,6 +7,12 @@ import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import { faMoon } from "@fortawesome/free-regular-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
+import { PT_Serif } from "next/font/google";
+const ptSerif = PT_Serif({
+  weight: ["400", "700"],
+  subsets: ['latin'],
+  display: "swap"
+});
 
 type BlogPost = {
   id: string;
@@ -183,7 +189,7 @@ const BlogPost = () => {
             </div>
 
             <div className="h-full flex items-center justify-center xl:px-[52px] sm:px-[20px] md:max-w-[800px]">
-              <p className="lg:[writing-mode:vertical-rl] xl:text-[200px] lg:text-[100px] lg:tracking-[30px] font-bold pt-serif lg:whitespace-nowrap md:text-[20px]">{post.author} | {post.slug} | {post.date_of_publication}</p>
+              <p className={`lg:[writing-mode:vertical-rl] xl:text-[200px] lg:text-[100px] lg:tracking-[30px] font-bold  lg:whitespace-nowrap md:text-[20px] ${ptSerif.className}`}>{post.author} | {post.slug} | {post.date_of_publication}</p>
             </div>
         </div>
     </div>
