@@ -10,6 +10,7 @@ const ptSerif = PT_Serif({
   display: "swap"
 });
 import React, { useState } from "react";
+import Link from "next/link";
 
 
 const Main = () => {
@@ -21,7 +22,7 @@ const Main = () => {
       color: darkMode ? "#fff" : "#090D1F",
       borderColor: darkMode ? "#ffffff" : "#000000",
     }}
-     className="xl:px-[100px] py-[50px] flex justify-center flex-col transition-colors duration-500 sm:h-screen sm:px-[16px] sm:min-w-[320px] sm:max-w-[767px] md:min-w-[768px] md:max-w-[1023px] md:px-[30px] lg:min-w-[1024px] lg:max-w-[1439px] lg:px-[80px] xl:min-w-[1440px] xl:max-w-full bg-[url('/Blog%201/back.png')] bg-repeat-y  bg-center">
+     className="xl:px-[100px]  flex justify-center flex-col transition-colors duration-500 sm:h-screen sm:px-[16px] sm:min-w-[320px] sm:max-w-[767px] md:min-w-[768px] md:max-w-[1023px] md:px-[30px] lg:min-w-[1024px] lg:max-w-[1439px] lg:px-[80px] xl:min-w-[1440px] xl:max-w-full bg-[url('/Blog%201/back.png')] bg-repeat-y  bg-center">
       <div style={{
                 backgroundColor: darkMode ? "#fff" : "#090D1F",
                 color: darkMode ? "#090D1F" : "#fff",
@@ -37,12 +38,12 @@ const Main = () => {
         style={{
           borderColor: darkMode ? "#ffffff" : "#000000",
         }}
-         className={`font-bold xl:text-[200px] sm:text-[50px] md:text-[80px] lg:text-[120px] text-center border-y-[2px] my-[20px] ${ptSerif.className}`}>THE BLOG</h1>
+         className={`font-bold xl:text-[200px] sm:text-[50px] md:text-[80px] lg:text-[120px] text-center border-y-[2px]  my-[20px] ${ptSerif.className}`}>THE BLOG</h1>
 
-         <h1 style={{
+         <Link href='/Blogs' style={{
           borderColor: darkMode ? "#ffffff" : "#000000",
         }}
-         className={`font-bold xl:text-[110px] sm:text-[25px] md:text-[50px] lg:text-[80px] text-center border-y-[2px] my-[20px] leading-[90%] py-[30px] ${ptSerif.className}`}>MUHAMMAD SHARIQ</h1>
+         className={`font-bold xl:text-[110px] sm:text-[25px] md:text-[50px] lg:text-[80px] text-center border-y-[2px] my-[20px] leading-[90%] py-[30px] ${ptSerif.className}`}>MUHAMMAD SHARIQ</Link>
         
     </div>
   )

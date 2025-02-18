@@ -52,7 +52,7 @@ const Blogs = () => {
               <Image src={post.cover_image} width={500} height={500} alt="Cover Image" className="sm:w-[288px] lg:w-[400px] xl:w-[500px]"/>
               <div className="flex flex-col gap-[10px]">
                 <div className="flex justify-between items-center xl:w-[500px] sm:w-[288px] lg:w-[400px]">
-                  <h2 className="xl:text-[22px] font-semibold xl:w-[450px] lg:w-[400px]">{post.title}</h2>
+                  <Link href={`/Blogs/${post.id}`} className="xl:text-[22px] font-semibold xl:w-[450px] lg:w-[400px] hover:underline">{post.title}</Link >
                   <Link href={`/Blogs/${post.id}`} className="">
                   <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </Link>
